@@ -3,13 +3,26 @@
     <head>
      <meta charset="UTF-8">
         <title>first web page</title> <!--هون عنوان الصفحة الي بكون ظاهر في المتصفح-->
-
+    <meta name="author" content="Lama Ayasa">
+    <meta name="description" content="This page contains all the things I am learning as I learn HTML.">
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
     </head>
     <body>
-        <h1>Hello World</h1><!--بس منحط واحد h1-->
-
+        <h1>My Goals for the year</h1><!--بس منحط واحد h1-->
         <hr><!--خط عمودي-->
-
+        <nav>
+            <ul>
+                <li>
+                    <a href="#html">Learn HTML</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planning a Vacation</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+ <section id="html">
         <h2>I'm ready to learn HTML</h2>
         <p>This is my first web page.</p> <!--هون للفقرات-->
         
@@ -18,7 +31,9 @@
             <ol>
                 <li>I learn more about web dev.</li>
                 <li>I plan out my Schedule.</li>
-                <li>I use resources from <abbr title="Mozilla Develpper Network">MDN</abbr>.</li>
+                <li>I use resources from <abbr title="Mozilla Develpper Network">
+                   <a href="https://developer.mozilla.org/en-US/" target="_parent">MDN</a> <!-- to add link-->
+                </abbr>.</li>
             </ol> <!--there are another types of list like <ul>-->
         <!--
         <br> &nbsp;&nbsp;...I learn more about web dev. -هون بتنزل سطر حديد-
@@ -26,11 +41,9 @@
             <br>&nbsp;&nbsp;...I plan out my Schedule.
             <br>&nbsp;&nbsp;...I use resources from <abbr title="Mozilla Develpper Network">MDN</abbr>.
             abbr لتوضيح الاختصارات-->
-    
-    
-
+</section>
         <hr>
-
+<section id="vacation">
         <h2>I'm  also planning a vacation</h2>
         <p>I've been working hard and <em>really need a gateway.</em></p> <!--هون للفقرات-->
         <p>I live in Palestine I want to visit Dome of the Rock</p>
@@ -62,8 +75,15 @@
         </dl>
         <p> Anywhere hot. <strong>NO wayy!</strong>  </p>
 
-        <hr>
-        &lt;&lt;&lt;&nbsp;&copy; Lama Ayasa <!--less than and copy -->
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatem fugiat possimus reprehenderit deleniti. Impedit quas doloribus asperiores inventore, exercitationem neque fuga, voluptatum quasi aperiam
+     autem dolore. Libero, fugit aliquam.</p>
 
+</section>
+        <hr>
+        &lt;&lt;&lt;&nbsp;&copy;  <a href="about.html">Lama Ayasa</a> <!--less than and copy -->
+<p>
+    
+  <a href="#">Back to top</a>  
+</p>
     </body>
 </html>
