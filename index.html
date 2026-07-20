@@ -244,7 +244,7 @@
 
                 <p>
                 <input type="radio" name="food" id="otherfood" value="other"> 
-                <label for="other">other</label>
+                <label for="otherfood">other</label>
                 </p>
             </fieldset>
              
@@ -266,11 +266,11 @@
              <legend>Send me a note</legend>
              <label for="message">Your Massage: </label>
              <br>
-             <textarea name="message" id="message" cols="106 " rows="10" placeholder="Type you massage here"></textarea>
+             <textarea name="message" id="message" cols="106" rows="10" placeholder="Type you massage here"></textarea>
             </fieldset>
 
             <br>
-            <button type="submit">Send</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Send</button>
             <button type="reset">Reset </button>
 
 
@@ -278,7 +278,7 @@
         </article>
 <br>
 
-        <section>
+        <div>
      <!-- أضفنا aria-label توضيحية 
       تكمن الفائدة الجوهرية لاستخدام خاصية aria-label في تعزيز "سهولة الوصول" (Accessibility) للمواقع،
        حيث تعمل كأداة تعريفية بديلة تمنح المستخدمين الذين يعتمدون على تقنيات مساعدة، مثل قارئات الشاشة، 
@@ -292,7 +292,7 @@
    <button class="next-btn" aria-label="الصورة التالية">
       <img src="images/f.svg" alt="" width="20" height="20">
    </button>
-</section>
+</div>
 
 
 </main>
