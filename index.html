@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="main.css" type="text/css">
     </head>
     <body>
+        <header>
         <h1>My Goals for the year</h1><!--بس منحط واحد h1-->
-        <hr><!--خط عمودي-->
         <nav>
             <ul>
                 <li>
@@ -21,16 +21,21 @@
                 </li>
             </ul>
         </nav>
+        </header>
         <hr>
- <section id="html">
+        <main>
+ <article id="html">
         <h2>I'm ready to learn HTML</h2>
         <p>This is my first web page.</p> <!--هون للفقرات-->
+        <section>
+            <h3>HTML5</h3>
         <img src="images/html5.png" alt="html5 LOGO" title="I'm ready to learn HTML"
         width="300" height="300">
 
         <code> &lt; h1 &gt; Hello World !&lt; /h1 &gt; </code>
 
-
+      </section>
+      <section>
         <h3>My Daily Schedule </h3>
         <p> Let me tell you how:</p>
             <ol>
@@ -40,19 +45,28 @@
                    <a href="https://developer.mozilla.org/en-US/" target="_parent">MDN</a> <!-- to add link-->
                 </abbr>.</li>
             </ol> <!--there are another types of list like <ul>-->
+                <aside>
+                    <details>
+                        <summary>
+                            Guess the <mark>number of hours </mark> I code per day
+                        </summary>
+                        <p> I am start at <time datetime="09:00"></time> 9 am to  5 pm  </p>
+                    </details>
+                </aside>
         <!--
         <br> &nbsp;&nbsp;...I learn more about web dev. -هون بتنزل سطر حديد-
             &nbsp; لاضافة space
             <br>&nbsp;&nbsp;...I plan out my Schedule.
             <br>&nbsp;&nbsp;...I use resources from <abbr title="Mozilla Develpper Network">MDN</abbr>.
             abbr لتوضيح الاختصارات-->
-</section>
+            </section>
+</article>
         <hr>
-<section id="vacation">
+<article id="vacation">
         <h2>I'm  also planning a vacation</h2>
         <p>I've been working hard and <em>really need a gateway.</em></p> <!--هون للفقرات-->
         <p>I live in Palestine I want to visit Dome of the Rock</p>
-
+<section>
         <h3>Places I'd like to visit</h3>
 
         <ul>
@@ -61,10 +75,11 @@
             <figure>
             <img src="images/images.jfif" alt="Dome of the Rock" 
             width="500" height="400" loading="lazy">
-            </figure>
             <figcaption>
               Dome of the Rock  
             </figcaption>
+            </figure>
+            
         </li>
 
         <li><p>I've heard good things about going here: </p>
@@ -75,7 +90,8 @@
             </address> </li>
 
         </ul>
-
+</section>
+<section>
         <h3>Place I want to avoid:</h3>
         <dl>
            <dt>Extremely Hot Countries</dt>
@@ -91,13 +107,18 @@
 
 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatem fugiat possimus reprehenderit deleniti. Impedit quas doloribus asperiores inventore, exercitationem neque fuga, voluptatum quasi aperiam
      autem dolore. Libero, fugit aliquam.</p>
-
 </section>
+</article>
+</main>
         <hr>
-        &lt;&lt;&lt;&nbsp;&copy;  <a href="about.html">Lama Ayasa</a> <!--less than and copy -->
-<p>
+<footer>
+            <p>
+              &lt;&lt;&lt;&nbsp;&copy;  <a href="about.html">Lama Ayasa</a> <!--less than and copy -->
+            </p>
+            <p>
     
   <a href="#">Back to top</a>  
-</p>
+            </p>
+</footer>
     </body>
 </html>
