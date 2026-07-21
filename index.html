@@ -6,13 +6,17 @@
     <meta name="author" content="Lama Ayasa">
     <meta name="description" content="This page contains all the things I am learning as I learn HTML.">
     <link rel="icon" href="images/html5.png" type="image/x-icon">
-    <link rel="stylesheet" href="main.css" type="text/css">
-    </head>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vibes&display=swap" rel="stylesheet">
+    
+</head>
     <body>
         <header>
         <h1>My Goals for the year</h1><!--بس منحط واحد h1-->
         <nav>
-            <ul>
+            <ul class="navbar">
                 <li>
                     <a href="#html">Learn HTML</a>
                 </li>
@@ -25,150 +29,192 @@
         <hr>
         <main>
  <article id="html">
-        <h2>I'm ready to learn HTML</h2>
-        <p>This is my first web page.</p> <!--هون للفقرات-->
-        <section>
-            <h3>HTML5</h3>
-        <img src="images/html5.png" alt="html5 LOGO" title="I'm ready to learn HTML"
-        width="300" height="300">
+    <h2>I'm ready to learn HTML</h2>
+    <p>اهلا وسهلا فيكم في الموقع </p>
 
-        <code> &lt; h1 &gt; Hello World !&lt; /h1 &gt; </code>
+    <section class="image">
+        <img
+            src="images/html5.png"
+            alt="html5 LOGO"
+            title="I'm ready to learn HTML"
+            width="300"
+            height="300"
+        >
 
-      </section>
-      <section>
-        <h3>My Daily Schedule </h3>
-        <p> Let me tell you how:</p>
-            <ol>
-                <li>I learn more about web dev.</li>
-                <li>I plan out my Schedule.</li>
-                <li>I use resources from <abbr title="Mozilla Develpper Network">
-                   <a href="https://developer.mozilla.org/en-US/" target="_parent">MDN</a> <!-- to add link-->
-                </abbr>.</li>
-            </ol> <!--there are another types of list like <ul>-->
-                <aside>
-                    <details>
-                        <summary>
-                            Guess the <mark>number of hours </mark> I code per day
-                        </summary>
-                        <p> I am start at <time datetime="09:00"></time> 9 am to  5 pm  </p>
-                    </details>
-                </aside>
-                <br>
-                <table> <!-- add new table-->
-                    <caption> My Daily Schedule</caption>
-                    <thead>
-                    <tr>
-                        <th >&nbsp;</th>
-                        <th scope="col">Time</th>
-                        <th scope="col">Activity</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr> <!--add new row-->
-                        <th scope="row">Moring</th>
-                        <td>
-                            <time datetime="09:00"> 9am </time>-
-                            <time datetime="11:00"> 11am </time>
-                        </td>
-                        <td>
-                            Write code
-                        </td>
+        
+    </section>
 
-                    </tr> 
-                    <tr> <!--add new row-->
-                        <th scope="row">Break</th>
-                        <td>
-                            <time datetime="11:00"> 11am </time>-
-                            <time datetime="12:00"> 12pm </time>
-                        </td>
-                        <td>
-                            Eat Lunch
-                        </td>
-                    </tr>
+    <section>
+        <h3>My Daily Schedule</h3>
 
-                     <tr> <!--add new row-->
-                        <th scope="row">Afternoon</th>
-                        <td>
-                            <time datetime="12:00"> 12am </time>-
-                            <time datetime="17:00"> 5am </time>
-                        </td>
-                        <td>
-                            Study for other cources
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Evening</th>
-                        <td rowspan="2">All other times</td>
-                        <td>Free Time</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Night</th>
-                        <td>Sleep</td>
-                    </tr>
-                </tbody> 
-                   <tfoot>
-                    <tr>
-                        <td colspan="2">And that's what I do every day, 
-                            5 days a week. Just eat, sleep, code ...and recharge</td>
-                    </tr>
-                   </tfoot>
-                </table>
+        <p>Let me tell you how:</p>
 
-        <!--
-        <br> &nbsp;&nbsp;...I learn more about web dev. -هون بتنزل سطر حديد-
-            &nbsp; لاضافة space
-            <br>&nbsp;&nbsp;...I plan out my Schedule.
-            <br>&nbsp;&nbsp;...I use resources from <abbr title="Mozilla Develpper Network">MDN</abbr>.
-            abbr لتوضيح الاختصارات-->
-            </section>
+        <ol>
+            <li>I learn more about web dev.</li>
+            <li>I plan out my Schedule.</li>
+            <li>
+                I use resources from
+                <abbr title="Mozilla Developer Network">
+                    <a href="https://developer.mozilla.org/en-US/" target="_parent">
+                        MDN
+                    </a>
+                </abbr>.
+            </li>
+        </ol>
+
+        <aside>
+            <details>
+                <summary>
+                    Guess the <mark>number of hours</mark> I code per day
+                </summary>
+
+                <p>
+                    I start at
+                    <time datetime="09:00"></time>
+                    9 am to 5 pm
+                </p>
+            </details>
+        </aside>
+
+        <br>
+
+        <table>
+            <caption>My Daily Schedule</caption>
+
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Activity</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">Morning</th>
+                    <td>
+                        <time datetime="09:00">9am</time> -
+                        <time datetime="11:00">11am</time>
+                    </td>
+                    <td>Write code</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Break</th>
+                    <td>
+                        <time datetime="11:00">11am</time> -
+                        <time datetime="12:00">12pm</time>
+                    </td>
+                    <td>Eat Lunch</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Afternoon</th>
+                    <td>
+                        <time datetime="12:00">12pm</time> -
+                        <time datetime="17:00">5pm</time>
+                    </td>
+                    <td>Study for other courses</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Evening</th>
+                    <td rowspan="2">All other times</td>
+                    <td>Free Time</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Night</th>
+                    <td>Sleep</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        And that's what I do every day, 5 days a week.
+                        Just eat, sleep, code... and recharge.
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
 </article>
-        <hr>
+
+<hr>
+
 <article id="vacation">
-        <h2>I'm  also planning a vacation</h2>
-        <p>I've been working hard and <em>really need a gateway.</em></p> <!--هون للفقرات-->
-        <p>I live in Palestine I want to visit Dome of the Rock</p>
-<section>
-        <h3>Places I'd like to visit</h3>
+    <h2>I'm also planning a vacation</h2>
+
+    <p>
+        I've been working hard and
+        <em>really need a getaway.</em>
+    </p>
+
+    <p>
+        I live in Palestine. I want to visit the Dome of the Rock.
+    </p>
+
+    <section>
+        <h3>Places I'd Like to Visit</h3>
 
         <ul>
-        <li><p> I heard a good thing about the  Dome of the Rock </p>
-            <!--يُعد وسم <figure> في HTML5 حاوية دلالية تُستخدم لتجميع الصورة مع محتواها ككتلة واحدة مترابطة، حيث يعمل وسم <img> داخلها على عرض الصورة وتحديد خصائصها؛ فالمسار src يحدد موقع الملف، والنص البديل alt يضمن إمكانية الوصول لمحركات البحث ومستخدمي قارئات الشاشة، بينما تساهم الأبعاد المحددة (width وheight) في استقرار تخطيط الصفحة ومنع اهتزازها أثناء التحميل، وتعمل خاصية loading="lazy" على تحسين الأداء عبر تأجيل تحميل الصورة حتى اقتراب المستخدم من الوصول إليها، مما يجعل هذا الهيكل خياراً احترافياً ومنظماً لعرض الصور في مواقع الويب.-->
-            <figure>
-            <img src="images/images.jfif" alt="Dome of the Rock" 
-            width="500" height="400" loading="lazy">
-            <figcaption>
-              Dome of the Rock  
-            </figcaption>
-            </figure>
-            
-        </li>
+            <li>
+                <p>I heard good things about the Dome of the Rock.</p>
 
-        <li><p>I've heard good things about going here: </p>
-            <address>
-                Vişnezade Mahallesi
-                <br>Dolmabahçe Cd.
-                <br>34357 Beşiktaş/İstanbul
-            </address> </li>
+                <figure>
+                    <img
+                        src="images/images.jfif"
+                        alt="Dome of the Rock"
+                        width="500"
+                        height="400"
+                        loading="lazy"
+                    >
 
+                    <figcaption>Dome of the Rock</figcaption>
+                </figure>
+            </li>
+
+            <li>
+                <p>I've heard good things about going here:</p>
+
+                <address>
+                    Vişnezade Mahallesi
+                    <br>
+                    Dolmabahçe Cd.
+                    <br>
+                    34357 Beşiktaş / İstanbul
+                </address>
+            </li>
         </ul>
-</section>
-<section>
-        <h3>Place I want to avoid:</h3>
+    </section>
+
+    <section>
+        <h3>Places I Want to Avoid</h3>
+
         <dl>
-           <dt>Extremely Hot Countries</dt>
-           <dd>Anywhere with temperatures consistently above 45°C.</dd>
+            <dt>Extremely Hot Countries</dt>
+            <dd>Anywhere with temperatures consistently above 45°C.</dd>
 
-           <dt>Overcrowded Cities</dt>
-           <dd>Places where it's hard to find personal space or quiet.</dd>
+            <dt>Overcrowded Cities</dt>
+            <dd>Places where it's hard to find personal space or quiet.</dd>
 
-           <dt>Noisy Zones</dt>
-           <dd>Areas located right next to heavy industrial construction.</dd>
+            <dt>Noisy Zones</dt>
+            <dd>Areas located next to heavy industrial construction.</dd>
         </dl>
-        <p> Anywhere hot. <strong>NO wayy!</strong>  </p>
 
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatem fugiat possimus reprehenderit deleniti. Impedit quas doloribus asperiores inventore, exercitationem neque fuga, voluptatum quasi aperiam
-     autem dolore. Libero, fugit aliquam.</p>
-</section>
+        <p>
+            Anywhere hot.
+            <strong>NO way!</strong>
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptas voluptatem fugiat possimus reprehenderit deleniti.
+            Impedit quas doloribus asperiores inventore, exercitationem neque fuga,
+            voluptatum quasi aperiam autem dolore. Libero, fugit aliquam.
+        </p>
+    </section>
 </article>
 
         <hr>
@@ -293,7 +339,24 @@
       <img src="images/f.svg" alt="" width="20" height="20">
    </button>
 </div>
+<section class="cards">
 
+    <div class="card">
+        <h3>HTML</h3>
+        <p>Learn the structure of web pages.</p>
+    </div>
+
+    <div class="card">
+        <h3>CSS</h3>
+        <p>Style your websites with modern CSS.</p>
+    </div>
+
+    <div class="card">
+        <h3>Flexbox</h3>
+        <p>Create responsive layouts using Flexbox.</p>
+    </div>
+
+</section>
 
 </main>
         <hr>
