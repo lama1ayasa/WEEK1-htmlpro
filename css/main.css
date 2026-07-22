@@ -1,5 +1,5 @@
     :root{
-        --primary:#1B3A6B;
+        --primary:#4d2b14;
         --secondary:#4F86C6;
         --background:#F5F7FA;
         --text:#333;
@@ -111,8 +111,6 @@
 
     }
     
-
-
     table{
         width:100%;
         border-collapse:collapse;
@@ -185,3 +183,48 @@
         color:var(--primary);
         text-decoration:none;
     }
+.travel-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+    gap:30px;
+    margin:60px auto;
+    width:100%;
+}
+
+.travel-card{
+
+    background:#fffdf8;
+    border:3px solid #4d2b14;
+    border-radius:30px;
+    padding:30px;
+    transition:.3s;
+}
+
+.travel-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+.travel-card h3{
+    color:#4d2b14;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.travel-card p{
+
+    color:#666;
+    line-height:1.7;
+}
+@media (max-width:600px)
+{
+    .travel-cards
+    {
+       flex-wrap: wrap;
+    }
+    .travel-cards .travel-card
+    {
+        width:49%;
+    }
+}
