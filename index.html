@@ -14,26 +14,54 @@
 </head>
     <body>
         <header>
-        <h1>My Goals for the year</h1><!--بس منحط واحد h1-->
-        <nav>
-            <ul class="navbar">
+        <h1>Lama's Learning Journey 🚀</h1><!--بس منحط واحد h1-->
+        <nav class="navbar">
+            <ul>
                 <li>
-                    <a href="#html">Learn HTML</a>
+                    <a href="#aboutme">About Me</a>
+                </li>
+                <li>
+                    <a href="#about-html">Learn HTML</a>
+                </li>
+                <li>
+                    <a href="#about-css">Learn css</a>
                 </li>
                 <li>
                     <a href="#vacation">Planning a Vacation</a>
                 </li>
+                
             </ul>
         </nav>
         </header>
         <hr>
         <main>
- <article id="html">
-    <h2>I'm ready to learn HTML</h2>
-    <p>اهلا وسهلا فيكم في الموقع </p>
+            <div>
+                <p id="aboutme" class="about-css">
+                    &nbsp;Hi, I'm Lama Ayasa, a Computer Engineering student passionate about web development and programming.
+                     I'm learning HTML, CSS, 
+                    and responsive design while building creative and responsive websites.
+                </p>
+                   
+            </div>
+            
+<section class="about-css">
+    <div class="card">
+        <h3>HTML</h3>
+        <p>Learn the structure of web pages.</p>
+    </div>
 
-    <section class="image">
-        <img
+    <div class="card">
+        <h3>CSS</h3>
+        <p>Style your websites with modern CSS.</p>
+    </div>
+</section>
+
+
+ 
+            <section id="about-html" class="about-html">
+
+    <h2> About HTML</h2>
+    <img
             src="images/html5.png"
             alt="html5 LOGO"
             title="I'm ready to learn HTML"
@@ -41,14 +69,76 @@
             height="300"
         >
 
-        
-    </section>
+    <p class="html-intro">
+        HTML (HyperText Markup Language) is the standard language used to create the structure of web pages.
+        It allows developers to organize content such as headings, paragraphs, images, links, tables, and forms.
+    </p>
 
+    <div class="html-features">
+
+        <div class="feature">
+            <h3>📑 Structure</h3>
+            <p>Organizes the content of every web page.</p>
+        </div>
+
+        <div class="feature">
+            <h3>🖼 Multimedia</h3>
+            <p>Supports images, videos, audio and many media elements.</p>
+        </div>
+
+        <div class="feature">
+            <h3>🔗 Hyperlinks</h3>
+            <p>Connects web pages together using links.</p>
+        </div>
+
+        <div class="feature">
+            <h3>📋 Forms</h3>
+            <p>Collects user information using different input elements.</p>
+        </div>
+
+    </div>
+
+</section>
+<section id="about-css" class="about-css">
+
+    <h2> About CSS</h2>
+
+    <p class="css-intro">
+        CSS (Cascading Style Sheets) is used to style and design web pages.
+        It controls colors, fonts, spacing, layouts, animations, and makes websites responsive on different screen sizes.
+    </p>
+
+    <div class="css-features">
+
+        <div class="css-feature">
+            <h3>🎨 Colors</h3>
+            <p>Add beautiful colors, gradients and backgrounds to websites.</p>
+        </div>
+
+        <div class="css-feature">
+            <h3>📐 Layouts</h3>
+            <p>Create responsive layouts using Flexbox and CSS Grid.</p>
+        </div>
+
+        <div class="css-feature">
+            <h3>✨ Effects</h3>
+            <p>Add shadows, borders, hover effects and smooth transitions.</p>
+        </div>
+
+        <div class="css-feature">
+            <h3>📱 Responsive</h3>
+            <p>Make websites look perfect on mobiles, tablets and desktops.</p>
+        </div>
+
+    </div>
+
+</section>
+ <article  class="about-css">
+    
     <section>
-        <h3>My Daily Schedule</h3>
-
+        <h2>My Daily Schedule</h2>
         <p>Let me tell you how:</p>
-
+<br>
         <ol>
             <li>I learn more about web dev.</li>
             <li>I plan out my Schedule.</li>
@@ -141,9 +231,8 @@
     </section>
 </article>
 
-<hr>
 
-<article id="vacation">
+<article id="vacation" class="about-css">
     <h2>I'm also planning a vacation</h2>
 
     <p>
@@ -215,10 +304,43 @@
             voluptatum quasi aperiam autem dolore. Libero, fugit aliquam.
         </p>
     </section>
+    </section>
+    <section class="cards">
+
+    <div class="card">
+        <h3>Santorini</h3>
+        <p>Beautiful white houses with stunning sea views in Greece.</p>
+    </div>
+
+    <div class="card">
+        <h3>Cappadocia</h3>
+        <p>Famous for hot air balloons and unique rock formations.</p>
+    </div>
+
+    <div class="card">
+        <h3>Kyoto</h3>
+        <p>Historic temples and peaceful Japanese gardens.</p>
+    </div>
+
+    <div class="card">
+        <h3>Swiss Alps</h3>
+        <p>Snowy mountains and breathtaking natural landscapes.</p>
+    </div>
+
+    <div class="card">
+        <h3>Maldives</h3>
+        <p>Crystal-clear water and luxury island resorts.</p>
+    </div>
+
+    <div class="card">
+        <h3>Petra</h3>
+        <p>An ancient city carved into pink sandstone cliffs.</p>
+    </div>
+</section>
 </article>
 
         <hr>
-        <article id="Contact">
+        <article id="Contact" class="about-css">
             <h2>
                 Contact me
             </h2>
@@ -264,7 +386,7 @@
                   >
               </p>
 
-              <p>
+              <!--<p>
                 <label for="coffee">fav. coffee</label>
                 <select name="coffee" id="coffee">
 
@@ -274,10 +396,10 @@
                     <option value="4">Other</option>
 
                 </select>
-              </p>
+              </p>-->
             </fieldset>
             <br>
-            <fieldset>
+           <!-- <fieldset>
                 <legend>what is your fav food?</legend>
                 <p>
                 <input type="radio" name="food" id="tacos" value="tacos"> 
@@ -308,7 +430,7 @@
                   <input type="checkbox" name="pits" id="fish" value="fish"> 
                 <label for="fish">Fish</label>
 
-            </fieldset>
+            </fieldset>-->
 <br>
             <fieldset>
              <legend>Send me a note</legend>
@@ -326,72 +448,19 @@
         </article>
 <br>
 
-        <div>
+        <div > 
      <!-- أضفنا aria-label توضيحية 
       تكمن الفائدة الجوهرية لاستخدام خاصية aria-label في تعزيز "سهولة الوصول" (Accessibility) للمواقع،
        حيث تعمل كأداة تعريفية بديلة تمنح المستخدمين الذين يعتمدون على تقنيات مساعدة، مثل قارئات الشاشة، 
        القدرة على فهم وظيفة الأزرار التي تعتمد على الأيقونات فقط ولا تحتوي على نصوص مرئية؛
         فبدلاً من أن يواجه المستخدم "زر" مجهول الوظيفة، تقوم هذه الخاصية بتزويد قارئ الشاشة بوصف دقيق ومباشر للعملية التي سيؤديها الزر عند الضغط عليه،
          مما يضمن تجربة مستخدم شاملة تضمن التفاعل السلس للجميع دون استثناء، ويرفع من مستوى جودة وتوافقية الموقع مع المعايير العالمية للويب.-->
-    <button class="pre-btn" aria-label="الصورة السابقة">
-       <img src="images/pre.png" alt="" width="20" height="20">
-    </button>
-
-   <button class="next-btn" aria-label="الصورة التالية">
-      <img src="images/f.svg" alt="" width="20" height="20">
    </button>
 </div>
-<section class="cards">
 
-    <div class="card">
-        <h3>HTML</h3>
-        <p>Learn the structure of web pages.</p>
-    </div>
-
-    <div class="card">
-        <h3>CSS</h3>
-        <p>Style your websites with modern CSS.</p>
-    </div>
-
-    <div class="card">
-        <h3>Flexbox</h3>
-        <p>Create responsive layouts using Flexbox.</p>
-    </div>
 
 </section>
-<section class="travel-cards">
 
-    <div class="travel-card">
-        <h3>Santorini</h3>
-        <p>Beautiful white houses with stunning sea views in Greece.</p>
-    </div>
-
-    <div class="travel-card">
-        <h3>Cappadocia</h3>
-        <p>Famous for hot air balloons and unique rock formations.</p>
-    </div>
-
-    <div class="travel-card">
-        <h3>Kyoto</h3>
-        <p>Historic temples and peaceful Japanese gardens.</p>
-    </div>
-
-    <div class="travel-card">
-        <h3>Swiss Alps</h3>
-        <p>Snowy mountains and breathtaking natural landscapes.</p>
-    </div>
-
-    <div class="travel-card">
-        <h3>Maldives</h3>
-        <p>Crystal-clear water and luxury island resorts.</p>
-    </div>
-
-    <div class="travel-card">
-        <h3>Petra</h3>
-        <p>An ancient city carved into pink sandstone cliffs.</p>
-    </div>
-
-</section>
 </main>
         <hr>
 <footer>
